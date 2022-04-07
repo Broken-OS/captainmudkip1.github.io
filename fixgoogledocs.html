@@ -4,6 +4,22 @@
 			label {
 				color: #ffffff;
 			}
+			
+			body {
+	                        margin: 0;
+	                        background: #222;
+	                        font-family: 'Work Sans', sans-serif;
+	                        font-weight: 800;
+			}
+			
+			.center {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				border: 5px solid #FFFF00;
+				padding: 10px;
+			}
 		</style>
 		<link rel="stylesheet" href="/css/bulma.css"/>
 	</head>
@@ -15,8 +31,10 @@
 				document.write('<iframe id="iframe" src="'+src+'" frameborder=0></iframe>');
 			}
 		</script>
-		<label for="textbox">Put your Google Doc url here:</label>
-		<input type="text" width="500" height="20" id="textbox"></input>
+		<div class="center">
+		        <label for="textbox">Put your Google Doc url here:</label>
+		        <input type="text" width="500" height="20" id="textbox"></input>
+		</div>
 		<button onClick="reloadWeb()">Load</button>
 	</body>
 </html>
