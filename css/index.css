@@ -1,7 +1,6 @@
 /* @import url("bulma.css"); */
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
-@import url("glitch.css");
 
 body[noscroll] {
 	overflow: hidden;
