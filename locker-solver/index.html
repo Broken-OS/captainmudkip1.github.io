@@ -1,0 +1,39 @@
+<head>
+    <script type="text/javascript" src="/header/header.js"></script>
+    <title>Locker solver</title>
+    <link rel="stylesheet" href="/css/locker-solver.css">
+    <link rel="stylesheet" href="/css/yes-no.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="./solver.js"></script>
+</head>
+
+<body noscroll>
+    <div align="center">
+        <div smheightspacer></div>
+        <p class="text is-size-2">Locker solver</p>
+        <div heightspacer></div>
+        <div alignspacer>
+            <div class="control has-icons-left">
+                <input class="input" type="number" min="0" max="50" placeholder="Number 1" id="i1">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-hashtag"></i>
+                </span>
+            </div>
+            <div mheightspacer></div>
+            <div class="control has-icons-left">
+                <input class="input" type="number" min="0" max="50" placeholder="Number 2" id="i2">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-hashtag"></i>
+                </span>
+            </div>
+            <div mheightspacer></div>
+            <div class="control has-icons-left">
+                <input class="input" type="number" min="0" max="50" placeholder="Number 3" id="i3">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-hashtag"></i>
+                </span>
+            </div>
+            <div mheightspacer></div>
+            <button class="button is-primary" onclick="javascript:calc()">Solve!</button>
+        </div>
+</body>

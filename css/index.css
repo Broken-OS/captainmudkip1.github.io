@@ -15,9 +15,29 @@ div[heightspacer] {
 	align-self: auto;
 }
 
+div[smheightspacer] {
+  height: 20;
+  align-self: auto;
+}
+
+div[mheightspacer] {
+  height: 5;
+  align-self: auto;
+}
+
+div[alignspacer] {
+  width: 300;
+  align-self: auto;
+}
+
 div[widthspacer] {
 	width: 25;
 	align-self: auto;
+}
+
+div[group] {
+  margin: auto;
+  align: center;
 }
 
 #hiddenbutton {
