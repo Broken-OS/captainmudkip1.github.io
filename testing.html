@@ -7,7 +7,7 @@
   <iframe name="cstage" src="https://example.com" width="100%" height="100%" id="main-content-iframe" frameborder="0" onload="document.title=parent.frames['cframe'].document.title;">If you're seeing this message, it means IFrames are not supported; Please enable IFrames or upgrade to a compatible browser that supports IFrames.</iframe>
   <script>
     $( "iframe" ).on('load',function() {
-        document.title = document.getElementById("main-content-iframe").contentDocument.title;
+        document.title = "Hi!";
     });
   </script>
 </body>
