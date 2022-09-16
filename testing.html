@@ -7,7 +7,7 @@
   <iframe name="cstage" src="https://example.com" width="100%" height="100%" id="main-content-iframe" frameborder="0" onload="document.title=parent.frames['cframe'].document.title;"></iframe>
   <script>
     $( "iframe" ).on('load',function() {
-        var iframe = document.getElementById("myFrame");
+        var iframe = document.getElementById("main-content-iframe");
         document.title = iframe.contentWindow.document.title;
     });
   </script>
