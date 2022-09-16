@@ -4,10 +4,11 @@
 <body>
   <div id="main-content">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <iframe name="cstage" src="https://example.com" width="100%" height="100%" id="main-content-iframe" frameborder="0" onload="document.title=parent.frames['cframe'].document.title;">If you're seeing this message, it means IFrames are not supported; Please enable IFrames or upgrade to a compatible browser that supports IFrames.</iframe>
+  <iframe name="cstage" src="https://example.com" width="100%" height="100%" id="main-content-iframe" frameborder="0" onload="document.title=parent.frames['cframe'].document.title;"></iframe>
   <script>
     $( "iframe" ).on('load',function() {
-        document.title = "Hi!";
+        var iframe = document.getElementById("myFrame");
+        document.title = iframe.contentWindow.document.title;
     });
   </script>
 </body>
