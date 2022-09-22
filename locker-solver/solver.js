@@ -1,9 +1,9 @@
 function calc() {
     const input = [];
     e = 0;
-    input[0] = document.getElementById("i1").value;
-    input[1] = document.getElementById("i2").value;
-    input[2] = document.getElementById("i3").value;
+    input[0] = DOMPurify.sanitize(document.getElementById("i1").value);
+    input[1] = DOMPurify.sanitize(document.getElementById("i2").value);
+    input[2] = DOMPurify.sanitize(document.getElementById("i3").value);
     for(n = 0; n < 3; n++) {
         switch(input[n].length) {
             case 1:
