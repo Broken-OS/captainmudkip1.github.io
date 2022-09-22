@@ -143,3 +143,9 @@ body {
     margin: 0;
     font-size: 1.1rem;
 }
+
+.dmca {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
