@@ -1,7 +1,7 @@
 function reloadWeb() {
     src = document.getElementById("textbox").value;
-    //src.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
-    //src = DOMPurify.sanitize(src);
+    // src.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    // src = DOMPurify.sanitize(src);
     src = src.replace(/[^a-z0-9áéíóúñü \.,_-]/gim,"");
     src = src.trim();
     document.write('<title>Website fixer</title>');
