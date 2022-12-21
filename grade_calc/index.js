@@ -5,7 +5,6 @@ function CALC() {
     msg = null;
     if (e == "") { o.innerHTML = ""; } else if (t == "") { o.innerHTML = ""; } else {
         x = ((e * 100) / t);
-        console.log(x);
         if (x >= 0 && x <= 59.49) {
             msg = "E";
         } else if (x >= 59.50 && x <= 69.49) {
