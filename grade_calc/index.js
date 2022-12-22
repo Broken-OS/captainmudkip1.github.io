@@ -22,3 +22,7 @@ function CALC() {
         o.innerHTML = "Your grade was: <b>" + msg + "</b> (" + x + "%)";
     }
 }
+
+function VALID() {
+    return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'
+}
