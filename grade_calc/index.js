@@ -23,6 +23,6 @@ function CALC() {
     }
 }
 
-function VALID() {
-    return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'
+function VALID(input) {
+    return input.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
 }
