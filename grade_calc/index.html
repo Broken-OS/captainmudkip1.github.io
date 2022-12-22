@@ -10,9 +10,9 @@
     <div heightspacer></div>
     <div align="center" height="100" width="1"></div>
     <label for="earned" class="text">Earned points:</label>
-    <input type="number" id="earned" name="earned"><br>
+    <input type="number" id="earned" name="earned" onkeydown="javascript:VALID();"><br>
     <label for="total" class="text">Total points:</label>
-    <input type="number" id="total" name="total"><br>
+    <input type="number" id="total" name="total" onkeydown="javascript:VALID();"><br>
     <button onclick="javascript:CALC()" class="button is-success" style="padding: 3px; height: 30px;">Calculate</button>
     <p id="outputText" class="text"></p>
   </div>
