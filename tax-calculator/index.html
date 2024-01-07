@@ -1,0 +1,34 @@
+<head>
+    <script type="text/javascript" src="/header/header.js"></script>
+    <title>Tax calculator</title>
+    <link rel="stylesheet" href="/css/locker-solver.css">
+    <link rel="stylesheet" href="/css/yes-no.css">
+    <script src="https://kit.fontawesome.com/52d14d896d.js" crossorigin="anonymous"></script>
+    <script src="./calc.js"></script>
+</head>
+
+<body noscroll>
+    <div align="center">
+        <div smheightspacer></div>
+        <p class="text is-size-2">Tax calculator</p>
+        <div heightspacer></div>
+        <div alignspacer></div>
+                <input class="input" type="number" placeholder="Price" id="i1" min="0">
+                <span class="icon is-small is-left">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </span>
+            </div>
+            <div mheightspacer></div>
+            <div class="control has-icons-left">
+                <input class="input" type="number" placeholder="Tax" id="i2" min="0" max="100">
+                <span class="icon is-small is-left">
+                    <i class="fa-solid fa-percent"></i>
+                </span>
+            </div>
+            <div mheightspacer></div>
+            <button class="button is-primary" onclick="javascript:calc()">Calculate</button>
+            <div heightspacer></div>
+            <p id="output" class="text is-size-2"></p>
+        </div>
+    </div>
+</body>
